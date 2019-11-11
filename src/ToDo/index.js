@@ -53,7 +53,6 @@ class ToDo extends PureComponent {
 
   render() {
     const { data, newTask, show } = this.state;
-    const {} = this.props;
     const { addNewTask, renderActions } = this;
     const dataSource = data.filter(
       ({ state }) => show === "All" || state === show
